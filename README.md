@@ -13,9 +13,14 @@ La aplicación usa una base de datos MySQL con la siguiente tabla:
 | `created_at`      | TIMESTAMP      | Fecha de creación |
 | `updated_at`      | TIMESTAMP      | Última actualización |
 
+1. Instala Dependencias Composer de Laravel:
+   (Ejecutar dentro de la misma carpeta del proyecto)
+   composer install
+
+
 ### 🔧 Cómo crear la base de datos
-1. Correr las migraciones de Laravel:
-   ```bash
+2. Correr las migraciones de Laravel:
+   (Ejecutar dentro de la misma carpeta del proyecto)
    php artisan migrate
 
 
