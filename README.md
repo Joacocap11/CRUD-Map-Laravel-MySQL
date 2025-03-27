@@ -15,12 +15,14 @@ La aplicación usa una base de datos MySQL con la siguiente tabla:
 
 1. Instala Dependencias Composer de Laravel:
    (Ejecutar dentro de la misma carpeta del proyecto)
+    ```bash
    composer install
 
 
 ### 🔧 Cómo crear la base de datos
 2. Correr las migraciones de Laravel:
    (Ejecutar dentro de la misma carpeta del proyecto)
+    ```bash
    php artisan migrate
 
 
