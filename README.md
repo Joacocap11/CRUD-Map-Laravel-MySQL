@@ -18,11 +18,20 @@ La aplicación usa una base de datos MySQL con la siguiente tabla:
     ```bash
    composer install
 
-
-### 🔧 Cómo crear la base de datos
-2. Correr las migraciones de Laravel:
+2. Correr las migraciones de Laravel Base de datos MYSQL:
    (Ejecutar dentro de la misma carpeta del proyecto)
     ```bash
    php artisan migrate
+
+3. Copiar .env.example a env y editar agregando la base da datos
+   (Ejecutar dentro de la misma carpeta del proyecto)
+    ```bash
+    cp .env.example .env
+Luego de esto editar las lineas (23 - 28) con los datos de la BD MySQL
+
+4. Generar Key de Laravel en .env:
+   (Ejecutar dentro de la misma carpeta del proyecto)
+    ```bash
+   php artisan key:generate
 
 
