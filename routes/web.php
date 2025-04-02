@@ -8,6 +8,8 @@ Route::post('/clientes', [ClienteController::class, 'store'])->name('clientes.st
 Route::get('/clientes/{id}/edit', [ClienteController::class, 'edit'])->name('clientes.edit');
 Route::put('/clientes/{id}', [ClienteController::class, 'update'])->name('clientes.update');
 Route::delete('/clientes/{id}', [ClienteController::class, 'destroy'])->name('clientes.destroy');
+Route::get('/clientes/create', [ClienteController::class, 'create'])->name('clientes.create');
+
 
 
 

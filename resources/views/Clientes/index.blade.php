@@ -14,7 +14,14 @@
 </head>
 <body class="container py-4">
     <h1 class="text-center mb-4">Clientes en el Mapa</h1>
-
+ 
+    <div class="col-12">
+    <a href="{{ route('clientes.create') }}" class="btn btn-secondary">
+        Crear Cliente 
+    </a>
+    </div>
+    <br>
+    <!--
     <div class="card p-4 mb-4">
         <h2>Agregar Cliente</h2>
         <form action="{{ route('clientes.store') }}" method="POST" class="row g-3">
@@ -39,6 +46,7 @@
             </div>
         </form>
     </div>
+    -->
 
     <div class="mb-3">
         <h2>Buscar Intercomunicadores / Nombre</h2>
