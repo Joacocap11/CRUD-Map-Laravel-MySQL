@@ -115,7 +115,10 @@
             var input = document.getElementById('search').value.toLowerCase();
             var table = document.getElementById('clientesTable');
             var tr = table.getElementsByTagName('tr');
-            markers.forEach(m => m.marker._icon.style.display = "none");
+            markers.forEach(m => {
+                m.marker._icon.style.display = "none";
+                m.marker._shadow.style.display = "none";
+            });
 
             for (var i = 1; i < tr.length; i++) {
                 var tdNombre = tr[i].getElementsByTagName('td')[0];
@@ -128,6 +131,7 @@
                     if (nombreText.includes(input) || intercomunicadoresText.includes(input)) {
                         tr[i].style.display = "";
                         markers[i - 1].marker._icon.style.display = "block";
+                        markers[i - 1].marker._shadow.style.display = "block";
                     } else {
                         tr[i].style.display = "none";
                     }
